@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./IMG/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./boostrap.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="icon" href="./IMG/Trang chủ/logoapple.png">
+    <script src="./js.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="justify-content-center navbar bg-dark fixed-top w-100">
+            <ul class="nav">
+                <li class="h5 nav-item active"><a class="text-light nav-link active"  href="./trangchu.html"><i class="fa-brands fa-apple fa-xl"></i></a></li>
+                <li class="h5 nav-item"><a class="text-light nav-link " href="./iphone.html"><span class="text-secondary">|</span> iPHONE <span class="text-secondary">|</span></a></li>
+                <li class="h5 nav-item"><a class="text-light nav-link" href="./iPad.html"><span class="text-secondary">|</span> iPAD <span class="text-secondary">|</span></a></li>
+                <li class="h5 nav-item"><a class="text-light nav-link" href="./mac.html"><span class="text-secondary">|</span> MACBOOK <span class="text-secondary">|</span></a></li>
+                <li class="h5 nav-item"><a class="text-light nav-link" href="./contact.html"><span class="text-secondary">|</span> CONTACT <span class="text-secondary">|</span></a></li>
+                <div class="nav-item">
+                    <select id="languageSelector" class="text-light bg-dark border-0">
+                        <option value="en"> <a href="./contact.html">English</a></option>
+                        <option value="vi">Tiếng Việt</option>
+                    </select>
+                </div>
+            </ul>
+        </nav>
+    </header>
+        <article>
+            <video  width="100%" autoplay loop  src="./IMG/Trang chủ/applevideo.mp4"></video>
+            <div>
+                <video width="100%"  autoplay  loop src="./IMG/Trang chủ/banner_ip15_trangchu.mp4" ></video>
+                <p class="text-center">
+                    <span class="h1  text-danger">iPhone 15</span>
+                    <br>
+                    <sp class="h3 text-secondary">Camera mới. Thiết kế mới. Mới lịm tim.</sp>
+                </p>
+            </div>
+        </article>
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <img class="col w-100" src="./IMG/Trang chủ/camera_endframe__fziv6n0nniye_large.jpg" alt="">
+              </div>
+              <div class="col">
+               <p class="h3 text-secondary p-5"> Giờ đây, camera Chính có thể quay và chụp ở độ phân giải siêu cao.
+                Nhờ đó mà bạn có thể<b class="text-dark"> chụp những bức ảnh nổi bật, với chi tiết đáng
+                 kinh ngạc</b> một cách dễ dàng hơn bao giờ hết – từ ảnh chụp nhanh đến 
+                 ảnh phong cảnh tuyệt đẹp.</p>
+              </div>
+            </div>
+        </div>
+        <article>
+            <p class="text-center">
+                <span class="h1  text-danger"><i class="fa-brands fa-apple "></i> Watch Series 9</span>
+                <br>
+                <sp class="h3 text-secondary" >Thông minh hơn. Sáng hơn. Quyền năng hơn.</sp>
+                <video width="100%" autoplay loop src="./IMG/Trang chủ/large_2x.webm"></video>
+            </p>
+        </article>
+
+        <article>
+            <p class="text-center">
+                <span class="h1 text-danger">Macbook Air 15"</span>
+                <br>
+                <sp class="h3 text-secondary">Lớn ấn tượng. Mỏng không tưởng.</sp>
+                <video width="100%" autoplay loop src="./IMG/Trang chủ/mac.mp4"></video>
+            </p>
+        </article>
+        <footer class="bg-dark text-light">
+            <div class="text-center">
+                <p class="h4">Nhà sáng lập <br></p>
+                <img width="10%" src="./IMG/Trang chủ/vecteezy_people-avatar-icon-sign-design_9341238_766.png" alt="">
+                <div>
+                  <p class="h6">Tên: Lý Kim Tân</p>  
+                  <p class="h6">MSSV: B2205905</p>
+                </div>
+                <p><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-xl" style="color: #7294cf;"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl" style="color: #d08bd0;"></i></a>
+                </p>
+            </div>
+                <hr>
+            <div class="text-center">
+                <p>Location: <i class="fa-solid fa-location-dot"></i> CTU University</p>
+                <p>&copy; Group 10 </p>
+                <p><i class="fa-brands fa-apple "></i> Apple's Care  </p>
+            </div>
+
+        </footer>
+        <script>
+        $(document).ready((function()
+            {
+             alert("Chào mừng bạn đến với Apple Store");
+            }))
+        </script>
+</body>
+<script>
+    // Đăng ký sự kiện thay đổi ngôn ngữ
+    document.getElementById('languageSelector').addEventListener('change', function() {
+        var selectedLanguage = this.value;
+        changeLanguage(selectedLanguage);
+    });
+
+    // Hàm thay đổi ngôn ngữ
+    function changeLanguage(language) {
+        // Đây là nơi bạn sẽ thực hiện các thay đổi cần thiết cho ngôn ngữ được chọn
+        // Ví dụ: thay đổi văn bản, hiển thị hình ảnh theo ngôn ngữ, vv.
+        alert('Ngôn ngữ đã chọn: ' + language);
+    }
+</script>
+</html>
